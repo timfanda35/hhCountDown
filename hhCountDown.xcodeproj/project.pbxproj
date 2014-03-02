@@ -18,6 +18,11 @@
 		0909F6B118C2CD5C008FD39C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909F69018C2CD5C008FD39C /* Cocoa.framework */; };
 		0909F6B918C2CD5C008FD39C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0909F6B718C2CD5C008FD39C /* InfoPlist.strings */; };
 		0909F6BB18C2CD5C008FD39C /* hhCountDownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0909F6BA18C2CD5C008FD39C /* hhCountDownTests.m */; };
+		0909F6D018C2CEBD008FD39C /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0909F6C818C2CEBD008FD39C /* MainWindowController.m */; };
+		0909F6D118C2CEBD008FD39C /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0909F6C918C2CEBD008FD39C /* MainWindowController.xib */; };
+		0909F6D218C2CEBD008FD39C /* CountDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0909F6CB18C2CEBD008FD39C /* CountDownCell.m */; };
+		0909F6D318C2CEBD008FD39C /* CountDownField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0909F6CD18C2CEBD008FD39C /* CountDownField.m */; };
+		0909F6D418C2CEBD008FD39C /* MinSecFomatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0909F6CF18C2CEBD008FD39C /* MinSecFomatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,16 @@
 		0909F6B618C2CD5C008FD39C /* hhCountDownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hhCountDownTests-Info.plist"; sourceTree = "<group>"; };
 		0909F6B818C2CD5C008FD39C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0909F6BA18C2CD5C008FD39C /* hhCountDownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hhCountDownTests.m; sourceTree = "<group>"; };
+		0909F6C618C2CEBD008FD39C /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		0909F6C718C2CEBD008FD39C /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		0909F6C818C2CEBD008FD39C /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		0909F6C918C2CEBD008FD39C /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		0909F6CA18C2CEBD008FD39C /* CountDownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownCell.h; sourceTree = "<group>"; };
+		0909F6CB18C2CEBD008FD39C /* CountDownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownCell.m; sourceTree = "<group>"; };
+		0909F6CC18C2CEBD008FD39C /* CountDownField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownField.h; sourceTree = "<group>"; };
+		0909F6CD18C2CEBD008FD39C /* CountDownField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownField.m; sourceTree = "<group>"; };
+		0909F6CE18C2CEBD008FD39C /* MinSecFomatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinSecFomatter.h; sourceTree = "<group>"; };
+		0909F6CF18C2CEBD008FD39C /* MinSecFomatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinSecFomatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +130,12 @@
 		0909F69618C2CD5C008FD39C /* hhCountDown */ = {
 			isa = PBXGroup;
 			children = (
+				0909F6D618C2CED0008FD39C /* Resource */,
+				0909F6D518C2CEC1008FD39C /* Model */,
+				0909F6D718C2CEF1008FD39C /* Controller */,
 				0909F6A218C2CD5C008FD39C /* bearAppDelegate.h */,
 				0909F6A318C2CD5C008FD39C /* bearAppDelegate.m */,
-				0909F6A518C2CD5C008FD39C /* MainMenu.xib */,
+				0909F6C618C2CEBD008FD39C /* Const.h */,
 				0909F6A818C2CD5C008FD39C /* Images.xcassets */,
 				0909F69718C2CD5C008FD39C /* Supporting Files */,
 			);
@@ -152,6 +170,37 @@
 				0909F6B718C2CD5C008FD39C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0909F6D518C2CEC1008FD39C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0909F6CA18C2CEBD008FD39C /* CountDownCell.h */,
+				0909F6CB18C2CEBD008FD39C /* CountDownCell.m */,
+				0909F6CC18C2CEBD008FD39C /* CountDownField.h */,
+				0909F6CD18C2CEBD008FD39C /* CountDownField.m */,
+				0909F6CE18C2CEBD008FD39C /* MinSecFomatter.h */,
+				0909F6CF18C2CEBD008FD39C /* MinSecFomatter.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0909F6D618C2CED0008FD39C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0909F6A518C2CD5C008FD39C /* MainMenu.xib */,
+				0909F6C918C2CEBD008FD39C /* MainWindowController.xib */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		0909F6D718C2CEF1008FD39C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0909F6C718C2CEBD008FD39C /* MainWindowController.h */,
+				0909F6C818C2CEBD008FD39C /* MainWindowController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +284,7 @@
 				0909F6A918C2CD5C008FD39C /* Images.xcassets in Resources */,
 				0909F6A118C2CD5C008FD39C /* Credits.rtf in Resources */,
 				0909F6A718C2CD5C008FD39C /* MainMenu.xib in Resources */,
+				0909F6D118C2CEBD008FD39C /* MainWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0909F6D318C2CEBD008FD39C /* CountDownField.m in Sources */,
+				0909F6D018C2CEBD008FD39C /* MainWindowController.m in Sources */,
 				0909F6A418C2CD5C008FD39C /* bearAppDelegate.m in Sources */,
 				0909F69D18C2CD5C008FD39C /* main.m in Sources */,
+				0909F6D418C2CEBD008FD39C /* MinSecFomatter.m in Sources */,
+				0909F6D218C2CEBD008FD39C /* CountDownCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +519,7 @@
 				0909F6C018C2CD5C008FD39C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0909F6C118C2CD5C008FD39C /* Build configuration list for PBXNativeTarget "hhCountDownTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +528,7 @@
 				0909F6C318C2CD5C008FD39C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

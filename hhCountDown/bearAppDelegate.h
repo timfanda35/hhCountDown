@@ -6,10 +6,10 @@
 //  Copyright (c) 2014年 TakoBear. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "MainWindowController.h"
 
 @interface bearAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, strong) MainWindowController *mainWindowController;
 
 @end
