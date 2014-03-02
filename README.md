@@ -2,8 +2,7 @@
 
 *這是一個在 OS X 上運行的倒數計時器。*
 
-**This is a simple OS X Application for count down.
-**
+**This is a simple OS X Application for count down.**
 
 *一個回合是30分鐘。*
 
