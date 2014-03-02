@@ -1,0 +1,3 @@
+@interface MinSecFomatter : NSFormatter
+
+@end
